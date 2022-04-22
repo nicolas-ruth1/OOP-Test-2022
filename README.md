@@ -32,6 +32,7 @@ The dataset is stored in a csv file called nematodes.csv, The csv file has the f
 ## Marking Scheme
 
 | Marks | Description |
+|-------|-------------|
 | 15 | Creating the Nematode class |
 | 15 | Loading and populating the dataset |
 | 40 | Visualising the nematodes |
