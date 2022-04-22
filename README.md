@@ -11,7 +11,7 @@ Nematodes are among the most abundant animals on Earth. They occur as parasites 
 
 The dataset is stored in a csv file called nematodes.csv, The csv file has the following fields:
 
-| Field | Descrition |
+| Field | Description |
 |-------|-------------|
 | name | The name of the nematode. |
 | length | The length of the nematode. This is denoted by the number of segments drawn. |
