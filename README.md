@@ -16,8 +16,8 @@ The dataset is stored in a csv file called nematodes.csv, The csv file has the f
 | name | The name of the nematode. |
 | length | The length of the nematode. This is denoted by the number of segments drawn. |
 | limbs | A value of 1 indicates that the nematode has limbs. A value of 0 indicates that the nematode has no limbs. If the nematode has limbs, these are drawn as lines either side of the segments. |
-| gender | This can be a value of m, f, h or n. m indicates male and is drawn with a line and a circle on the last segment. f indicates female and is drawn with a circle in the bottom segment. h indicates hermaphrodite and is drawm with both male and female symbols. n indicates no gender and nothing is drawn in the last segment.
-| eyes | A value of 1 indicates that the nematode has eyes. This is drawn with two lines and circles drawn from the top segment. A value of 0 indicates that the nematode has no eyes | 
+| gender | This can be a value of m, f, h or n. m indicates male and is drawn with a line and a circle on the last segment. f indicates female and is drawn with a circle in the bottom segment. h indicates hermaphrodite and is drawn with both male and female symbols. n indicates no gender and nothing is drawn in the last segment.
+| eyes | A value of 1 indicates that the nematode has eyes. This is drawn with two lines and circles drawn from the top segment. A value of 0 indicates that the nematode has no eyes. | 
 
 ## Instructions
 
@@ -34,7 +34,7 @@ The dataset is stored in a csv file called nematodes.csv, The csv file has the f
 | Marks | Description |
 |-------|-------------|
 | 15 | Creating the Nematode class |
-| 15 | Loading and populating the dataset |
-| 40 | Visualising the nematodes |
+| 15 | Loading the dataset |
+| 40 | Visualising the dataset |
 | 20 | Navigating through the dataset |
 | 10 | Correct use of git |
