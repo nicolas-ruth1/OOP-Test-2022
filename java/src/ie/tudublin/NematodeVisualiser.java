@@ -46,7 +46,7 @@ public class NematodeVisualiser extends PApplet
 
 	public void settings()
 	{
-		fullScreen();
+		size(800, 800);
 	}
 
 	public void setup() {
@@ -54,8 +54,7 @@ public class NematodeVisualiser extends PApplet
 		background(0);
 		smooth();		
 		noCursor();
-		//size(1000, 600);
-
+		
 		loadNematodes();
 }
 	

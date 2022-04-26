@@ -7,15 +7,15 @@ public class Nematode
 {
     NematodeVisualiser v;
 
-    int age = 5;
+    int length = 5;
 
-    public int getAge() {
-        return age;
+    public int getLength() {
+        return length;
     }
 
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setlength(int length) {
+        this.length = length;
     }
 
 
@@ -97,9 +97,9 @@ public class Nematode
     float r = w * 0.5f;
     float eyeRadius = w * 0.1f;
 
-    public Nematode(NematodeVisualiser v, int age, String name, int limbs, boolean eyes, char gender) {
+    public Nematode(NematodeVisualiser v, int length, String name, int limbs, boolean eyes, char gender) {
         this.v = v;
-        this.age = age;
+        this.length = length;
         this.name = name;
         this.limbs = limbs;
         this.eyes = eyes;
@@ -109,7 +109,7 @@ public class Nematode
 
     public Nematode(NematodeVisualiser v, TableRow row)
     {
-        this(v, row.getInt("age"), row.getString("name"), row.getInt("limbs"), row.getInt("eyes") == 1, row.getString("gender").charAt(0));
+        this(v, row.getInt("length"), row.getString("name"), row.getInt("limbs"), row.getInt("eyes") == 1, row.getString("gender").charAt(0));
     }
 
     
@@ -121,7 +121,7 @@ public class Nematode
     public void render(float cx, float cy)
     {
 
-        float half = w * age * 0.5f; 
+        float half = w * length * 0.5f; 
         v.pushMatrix();
         v.translate(cx, cy);
         v.translate(0, - half);
@@ -132,7 +132,7 @@ public class Nematode
         v.textAlign(PApplet.CENTER, PApplet.CENTER);
         v.text(name, 0, -w * 2);
         
-        for(int i = 0 ; i < age ; i ++)
+        for(int i = 0 ; i < length ; i ++)
         {
             float y = i * w;
             v.ellipse(0, y, w, w);       
@@ -159,24 +159,24 @@ public class Nematode
         {
             case 'm':
                 {
-                  float y1 =  (age * w) - r;
+                  float y1 =  (length * w) - r;
                   v.line(0, y1, 0,  y1 + r);
                   v.circle(0, y1 + r + eyeRadius, eyeRadius * 2.0f);
                 }
                 break;
             case 'f':
                 {
-                    float y =  ((age - 1) * w);
+                    float y =  ((length - 1) * w);
                     v.circle(0, y, eyeRadius * 4.0f);                      
                 }
                 break;
             case 'h':
                 {
-                    float y1 =  (age * w) - r;
+                    float y1 =  (length * w) - r;
                     v.line(0, y1, 0,  y1 + r);
                     v.circle(0, y1 + r + eyeRadius, eyeRadius * 2.0f);
   
-                    float y =  ((age - 1) * w);
+                    float y =  ((length - 1) * w);
                     v.circle(0, y, eyeRadius * 4.0f);                      
                 }
                 break;
