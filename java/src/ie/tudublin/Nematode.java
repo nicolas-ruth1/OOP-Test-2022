@@ -88,7 +88,7 @@ public class Nematode
         this.eyeRadius = eyeRadius;
     }
 
-    String name = "June King Cepe";
+    String name = "Test";
     float w = 50;
 
     int limbs = 1;
